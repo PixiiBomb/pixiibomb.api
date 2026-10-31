@@ -1,0 +1,31 @@
+{
+    "name": "pixiibomb/api",
+    "description": "The PixiiBomb.API package",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Pixii",
+            "email": "pixiibomb@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "laravel/sanctum": "^4.0",
+        "pixiibomb/core": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "PixiiBomb\\Api\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PixiiBomb\\Api\\PixiiBombApiServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
